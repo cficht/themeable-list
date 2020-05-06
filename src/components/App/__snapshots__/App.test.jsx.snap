@@ -1,31 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders App 1`] = `
-<List
-  characters={
-    Array [
-      Object {
-        "id": 1,
-        "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
-        "name": "Rick Sanchez",
-        "species": "Human",
-        "status": "Alive",
-      },
-      Object {
-        "id": 2,
-        "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
-        "name": "Morty Smith",
-        "species": "Human",
-        "status": "Alive",
-      },
-      Object {
-        "id": 3,
-        "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
-        "name": "Summer Smith",
-        "species": "Human",
-        "status": "Alive",
-      },
-    ]
-  }
-/>
+<ListProvider>
+  <List />
+</ListProvider>
 `;

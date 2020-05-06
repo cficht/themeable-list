@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useCharacters } from '../../hooks/ListProvider';
 
-const List = ({ characters }) => {
+const List = () => {
+  const characters = useCharacters();
+  
   const characterNodes = characters.map(character => (
     <li key={character.id}>
       <h3>{character.name}</h3>
@@ -16,16 +18,6 @@ const List = ({ characters }) => {
       {characterNodes}
     </ul>
   );
-};
-
-List.propTypes = {
-  characters: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    status: PropTypes.string.isRequired,
-    species: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired
-  })).isRequired
 };
 
 export default List;
