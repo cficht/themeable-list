@@ -1,38 +1,17 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
+import { fetchCharacters } from '../services/rickAndMorty';
 
 const ListContext = createContext();
 
 export const ListProvider = ({ children }) => {
   const [characters, setCharacters] = useState([]);
-
-  const chararcterTest = [
-    {
-      id: 1,
-      name: 'Rick Sanchez',
-      status: 'Alive',
-      species: 'Human',
-      image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg'
-    },
-    {
-      id: 2,
-      name: 'Morty Smith',
-      status: 'Alive',
-      species: 'Human',
-      image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg'
-    },
-    {
-      id: 3,
-      name: 'Summer Smith',
-      status: 'Alive',
-      species: 'Human',
-      image: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg'
-    }
-  ];
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
-    setCharacters(chararcterTest);
-  }, []);
+    fetchCharacters(page)
+      .then(characters => setCharacters(characters));
+  }, [page]);
 
   return (
     <ListContext.Provider value={{ characters }}>

@@ -15,7 +15,7 @@ Testing - Snapshot Testing.
 [] - App
 [] - Header
 [] - Toggle
-[] - List 
+[X] - List 
 [] - Paging
 
 ## hooks/containers
