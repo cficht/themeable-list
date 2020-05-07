@@ -39,7 +39,6 @@ https://rickandmortyapi.com/api/character/?page=2&status=alive
 - Paging
 - Header
 - Toggle
-
 - CSS
 - Personalize Toggle
 - Tests?

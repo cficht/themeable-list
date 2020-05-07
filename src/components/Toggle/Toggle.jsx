@@ -8,8 +8,10 @@ const Toggle = () => {
 
   return (
     <section className={styles.Toggle}>
+      <span>DEAD</span>
       <input id="toggle" type="checkbox" checked={status === 'alive'} onChange={toggle} />
       <label htmlFor="toggle"></label>
+      <span>ALIVE</span>
     </section>
   );
 };

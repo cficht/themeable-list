@@ -20,4 +20,8 @@
   img {
     width: 75%;
   }
+
+  p {
+    font-style: italic;
+  }
 }

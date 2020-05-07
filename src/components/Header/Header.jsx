@@ -11,7 +11,6 @@ const Header = () => {
   return (
     <header className={styles.Header}>
       <h1>Rick and Morty</h1>
-      <h3>Wanted: Dead or Alive</h3>
       <Toggle />
     </header>
   );
