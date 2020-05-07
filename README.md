@@ -36,7 +36,9 @@ https://rickandmortyapi.com/api/character/?page=2&status=alive
 - List
 - ListProvider
 - api
-
 - Paging
 - Header
 - Toggle
+
+- CSS
+- Tests?
