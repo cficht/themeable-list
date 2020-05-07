@@ -1,0 +1,23 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  border: 10px solid rgb(184, 42, 42);
+  text-align: center;
+  color: white;
+  background-color: red;
+
+  h1 {
+    margin-block-start: .3em;
+    margin-block-end: .3em;
+  }
+
+  h3 {
+    margin-block-start: .5em;
+    margin-block-end: 1em;
+    font-style: italic;
+  }
+}

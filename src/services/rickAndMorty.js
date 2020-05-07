@@ -4,7 +4,6 @@ export const fetchCharacters = (page, status) => {
     .then(res => res.results.map(character => ({
       id: character.id,
       name: character.name,
-      status: character.status,
       species: character.species,
       image: character.image
     })));
