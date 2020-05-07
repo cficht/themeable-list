@@ -1,0 +1,25 @@
+.Paging {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 10px solid rgb(137, 191, 209);
+  text-align: center;
+  background-color: lightblue;
+
+  button {
+    margin: 0px 20px 0px 20px;
+    width: 5%;
+    font-size: 20px;
+    background-color: rgb(137, 191, 209);
+    color: white;
+  }
+
+  button:disabled {
+    margin: 0px 20px 0px 20px;
+    width: 5%;
+    font-size: 20px;
+    background-color: lightgray;
+    color: white;
+  }
+}
