@@ -41,4 +41,3 @@ https://rickandmortyapi.com/api/character/?page=2&status=alive
 - Toggle
 - CSS
 - Personalize Toggle
-- Tests?
