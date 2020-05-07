@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import List from './List';
+import Toggle from './Toggle';
 import { ListProvider } from '../../hooks/ListProvider';
 
-describe('List component', () => {
-  it('renders List', () => {
+describe('Toggle component', () => {
+  it('renders Toggle', () => {
     const wrapper = shallow(
       <ListProvider>
-        <List />
+        <Toggle />
       </ListProvider>
     );
     expect(wrapper).toMatchSnapshot();

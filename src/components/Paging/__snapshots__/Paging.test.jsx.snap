@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List component renders List 1`] = `
+exports[`Paging component renders Paging 1`] = `
 <ContextProvider
   value={
     Object {
@@ -12,6 +12,6 @@ exports[`List component renders List 1`] = `
     }
   }
 >
-  <List />
+  <Paging />
 </ContextProvider>
 `;

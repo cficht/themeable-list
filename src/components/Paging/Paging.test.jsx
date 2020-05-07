@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import List from './List';
+import Paging from './Paging';
 import { ListProvider } from '../../hooks/ListProvider';
 
-describe('List component', () => {
-  it('renders List', () => {
+describe('Paging component', () => {
+  it('renders Paging', () => {
     const wrapper = shallow(
       <ListProvider>
-        <List />
+        <Paging />
       </ListProvider>
     );
     expect(wrapper).toMatchSnapshot();
