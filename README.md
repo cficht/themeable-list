@@ -12,14 +12,14 @@ Testing - Snapshot Testing.
 # --------------------
 
 ## components
-[] - App
-[] - Header
-[] - Toggle
+[X] - App
+[X] - Header
+[X] - Toggle
 [X] - List 
-[] - Paging
+[X] - Paging
 
 ## hooks/containers
-[] - ListProvider
+[X] - ListProvider
 
 ## services
 api.js
@@ -30,12 +30,13 @@ api.js
 Rick and Morty
 https://rickandmortyapi.com/api/character
 Paging - https://rickandmortyapi.com/api/character/?page=2
+https://rickandmortyapi.com/api/character/?page=2&status=alive
 
 ## Steps
 - List
-
 - ListProvider
 - api
+
 - Paging
 - Header
 - Toggle

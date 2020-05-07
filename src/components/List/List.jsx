@@ -3,7 +3,6 @@ import { useCharacters } from '../../hooks/ListProvider';
 
 const List = () => {
   const characters = useCharacters();
-  
   const characterNodes = characters.map(character => (
     <li key={character.id}>
       <h3>{character.name}</h3>
